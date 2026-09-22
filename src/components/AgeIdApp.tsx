@@ -5,7 +5,7 @@ import { Check, ChevronRight, Clipboard, Code2, Hash, ShieldCheck, Sparkles, X, 
 type Tab = 'inspector' | 'wallet' | 'query' | 'snippet'
 type ParsedClaim = { salt: string; key: string; value: string | boolean; digest: string; matches: boolean }
 
-// 1. Честный Base64URL с поддержкой UTF-8
+// 1. Base64URL + UTF-8
 const b64UrlEncode = (str: string): string => {
   const bytes = new TextEncoder().encode(str)
   let binary = ''
@@ -22,7 +22,7 @@ const b64UrlDecode = (str: string): string => {
   return new TextDecoder().decode(bytes)
 }
 
-// 2. Хэш по RFC 9901: считается строго от ASCII-строки disclosure
+// 2. Hash RFC 9901: from ASCII disclosure
 const hashDisclosure = async (disclosureB64Url: string): Promise<string> => {
   const msgUint8 = new TextEncoder().encode(disclosureB64Url)
   const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8)
