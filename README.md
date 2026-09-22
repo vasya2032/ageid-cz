@@ -12,7 +12,7 @@ Check out the working sandbox here: **[https://ageid.cz](https://ageid.cz)**
 - **Developer-Friendly**: Includes an OID4VP Builder and ready-to-use TypeScript snippets for quick integration.
 
 ## 🛠️ Tech Stack
-- **Frontend**: TypeScript, React / Vite (или укажи свой фреймворк)
+- **Frontend**: TypeScript, Astro / Vite 
 - **Deployment**: Static Edge Hosting (Vercel)
 - **Standards Compliance**: RFC 9901 (SD-JWT), OID4VP 1.0, EUDI STS & ARF v3.0.0
 
