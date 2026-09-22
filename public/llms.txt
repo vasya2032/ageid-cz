@@ -1,0 +1,23 @@
+# ageid.cz — Zero-Data SD-JWT & OID4VP Age Assurance Sandbox
+
+> Client-side testbed and developer sandbox for zero-data age assurance compliant with EU Digital Services Act (DSA) Article 28 and eIDAS 2.0 / EUDI Wallet specifications.
+
+## Core Architecture
+- **Zero Data Footprint:** Entirely in-memory via Web Crypto API (`window.crypto.subtle`). No backend database, zero telemetry, no cookies.
+- **Privacy Design:** Prevents GDPR Art. 5 controller liabilities by proving attributes mathematically without disclosing personal identifiers (PII).
+- **Standards:**
+  - RFC 9901 (Selective Disclosure for JWT / SD-JWT)
+  - OID4VP 1.0 (OpenID for Verifiable Presentations)
+  - Digital Credentials Query Language (DCQL)
+  - EUDI Architecture and Reference Framework (ARF) v3.0
+
+## Verified Claims Supported
+- `age_over_18` (EU DSA Art. 28 adult content restriction)
+- `age_over_13` (COPPA / US KIDS Act)
+- `age_over_15` (France / EU social media compliance)
+- `age_over_21` (US / strict age verification)
+
+## Operator & Legal
+- Maintained by Bekzhan Ramazanov (Independent Web Architect & OSVČ, Prague, Czechia).
+- Source & Specs: https://ageid.cz
+- Contact: https://ramazanov.cz

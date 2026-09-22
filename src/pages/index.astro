@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+import AgeIdApp from '../components/AgeIdApp';
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ageid.cz — Zero-Data SD-JWT & OID4VP Age Assurance Sandbox</title>
+    <meta 
+      name="description" 
+      content="Interactive developer sandbox for eIDAS 2.0 / EUDI Wallet age verification. Zero-data architecture, RFC 9901 SD-JWT validation, and OID4VP DCQL queries." 
+    />
+    <link rel="canonical" href="https://ageid.cz/" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ageid.cz/" />
+    <meta property="og:title" content="ageid.cz — Zero-Data SD-JWT & OID4VP Sandbox" />
+    <meta 
+      property="og:description" 
+      content="Interactive eIDAS 2.0 & RFC 9901 age assurance sandbox. Verify age predicates without PII leakage." 
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ageid.cz/" />
+    <meta name="twitter:title" content="ageid.cz — Zero-Data SD-JWT & OID4VP Sandbox" />
+    <meta 
+      name="twitter:description" 
+      content="Interactive eIDAS 2.0 & RFC 9901 age assurance sandbox. Zero telemetry, runs in browser RAM." 
+    />
+
+    <!-- Theme & Icons -->
+    <meta name="theme-color" content="#09090b" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+  </head>
+  <body class="bg-[#09090b] text-zinc-100 antialiased selection:bg-zinc-800">
+    <AgeIdApp client:load />
+  </body>
+</html>

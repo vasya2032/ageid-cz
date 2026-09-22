@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Блокировка агрессивных и бесполезных скраперов
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# Путь для LLM и поисковиков
+Sitemap: https://ageid.cz/sitemap.xml
