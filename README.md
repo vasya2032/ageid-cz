@@ -30,12 +30,12 @@ Make sure you have [Node.js](https://nodejs.org) installed.
 
 2. Install dependencies:
    ```bash
-   npm install
+   bun install
    ```
 
 3. Start the development server:
    ```bash
-   npm run dev
+   bun run dev
    ```
 
 ## 📄 License
